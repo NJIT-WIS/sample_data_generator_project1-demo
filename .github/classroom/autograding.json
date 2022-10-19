@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Addition",
+      "setup": "sudo -H pip3 install -r requirements.txt ",
+      "run": "pytest --pylint tests/test_addition.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Subtraction",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest --pylint tests/test_subtraction.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Division",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest --pylint tests/test_division.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Multiplication",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest --pylint tests/test_multiplication.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
