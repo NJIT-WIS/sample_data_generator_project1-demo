@@ -100,8 +100,8 @@ Grading Notes:
     of records specified by the sample size.
 15. Your program needs to output the new sample files to a directory called "output" that is a sub folder of the
     projects root directory i.e. <project directory>/output. Do not put the output folder inside the test directory.
-16. Your program should output 15 different files using the naming convention sample_data_<confidence interval>_<
-    margin_error>_<record_count>.csv:
+16. Your program should output 15 different files using the naming convention sample_data_confidenceInterval_
+    marginError_recordCount.csv:
     * For example (counts are not accurate):
         1. sample_data_80_01_300.csv
         2. sample_data_80_05_280.csv
