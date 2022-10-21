@@ -28,6 +28,10 @@ test data files that are generated using the specified values for confidence int
 you will create a selection of files that can be used at various points in development, since as the program become more
 complete you would increase the size of the input data to test various aspects of a program such as memory usage.
 
+# Videos
+1. [Lecture 1](https://youtu.be/JCQ_8ZlzhnY)
+2. [Lecture 2](https://youtu.be/FfdZm-UoBdc)
+
 # Your program is required to do the following:
 
 1. Take this file as input:
@@ -79,28 +83,30 @@ Grading Notes:
    Pandas. [Click Here](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write)
 5. Read this tutorial about creating summary statistics with
    Pandas [Click Here](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html#min-tut-06-stats)
-6. Break each part of both formulas down into specific steps such as count, average, variance, standard deviation,
+* 6. Note: To get the correct values for sample size you will need to use .5 standard deviation if your standard deviation is greater than 1
+7. Break each part of both formulas down into specific steps such as count, average, variance, standard deviation,
    etc...
-7. Create one test file to work with Pandas from and work out the basic steps to solve this problem.
-8. Refactor your working code to place it in the app folder. Note, you don't need to make an actual command line
-   application, it just needs to work using tests, so you don't need a fully working program.
-9. You do need to put the code to call the methods of your program in
-   the [app/sample_data_generator.py](app/sample_data_generator.py) file.
-10. Your code needs to be module and follow separation of concerns, don't repeat yourself, and demonstrate SOLID to the
+8. First do the sample calculation with the numbers from the WikiHow article, so you check your math
+9. Create one SMALL 100 record test file to work with Pandas from and work out the basic steps to solve this problem.  Once you have your program working then use the entire data file to generate the sample data files.
+10. Refactor your working code to place it in the app folder. Note, you don't need to make an actual command line
+    application, it just needs to work using tests, so you don't need a fully working program.
+11. You do need to put the code to call the methods of your program in
+    the [app/sample_data_generator.py](app/sample_data_generator.py) file.
+12. Your code needs to be module and follow separation of concerns, don't repeat yourself, and demonstrate SOLID to the
     best of your ability.
-11. You can use Pandas for a lot of the functionality of the program, so once you know your steps, you should research
+13. You can use Pandas for a lot of the functionality of the program, so once you know your steps, you should research
     how Pandas can be used do it.
-12. Your final program should be static methods because you are mainly just sending commands to Pandas and Pandas
+14. Your final program should be static methods because you are mainly just sending commands to Pandas and Pandas
     dataframe is the data instance. Each Panda's command should be its own method, since you shouldn't directly call
     library functions.
-13. You need to calculate directory paths programmatically, or your program won't work on GitHub because it won't be
+15. You need to calculate directory paths programmatically, or your program won't work on GitHub because it won't be
     able
     to find the data directory path, since Github's test environment is not the same as your own computer.
-14. Your data selection algorithm must not select the same record twice, so that it results in the correct total number
+16. Your data selection algorithm must not select the same record twice, so that it results in the correct total number
     of records specified by the sample size.
-15. Your program needs to output the new sample files to a directory called "output" that is a sub folder of the
+17. Your program needs to output the new sample files to a directory called "output" that is a sub folder of the
     projects root directory i.e. <project directory>/output. Do not put the output folder inside the test directory.
-16. Your program should output 15 different files using the naming convention sample_data_confidenceInterval_
+**17. Your program should output 15 different files using the naming convention sample_data_confidenceInterval_
     marginError_recordCount.csv:
     * For example (counts are not accurate):
         1. sample_data_80_01_300.csv
@@ -117,7 +123,7 @@ Grading Notes:
         12. sample_data_95_10_250.csv
         13. sample_data_99_01_300.csv
         14. sample_data_99_05_280.csv
-        15. sample_data_99_10_250.csv
+        15. sample_data_99_10_250.csv**
 
 ### Assignment Requirements
 
